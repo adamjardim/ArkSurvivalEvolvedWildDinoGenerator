@@ -1,0 +1,71 @@
+This is the template document for the dino loader.  
+For each area marked with a '#' please fill in your choice below it.  
+Choices for that section will be presented above that line.
+
+
+
+
+
+Map Choices:
+	 0  -  The Island
+	 1  -  The Center
+	 2  -  Scorched Earth
+	 3  -  Aberration
+	 4  -  Ragnarok
+	 5  -  Extinction
+
+Format : [Map Number]
+Example Input : 1
+#map
+1
+
+
+
+Region Choices:
+	 0  -  DinoSpawnEntriesQuetz_EX
+	 1  -  DinoSpawnEntries_CityCenter
+	 2  -  DinoSpawnEntries_CityCenter_DangerClose
+	 3  -  DinoSpawnEntries_CityObelisk
+	 4  -  DinoSpawnEntries_CityTier2_Building
+	 5  -  DinoSpawnEntries_CityTier2_Building_DangerClose
+	 6  -  DinoSpawnEntries_CityTier2_Fliers
+	 7  -  DinoSpawnEntries_City_Park2
+	 8  -  DinoSpawnEntries_Wasteland_City_Buffer_1
+	 9  -  DinoSpawnEntries_Wasteland_City_Buffer_2
+	 10  -  DinoSpawnEntries_Wasteland_Easy
+	 11  -  DinoSpawnEntries_Wasteland_Hard
+	 12  -  DinoSpawnEntries_Wasteland_Medium
+	 13  -  Ext_DinoSpawnEntries_DesertCave
+	 14  -  Ext_DinoSpawnEntries_DesertMountain
+	 15  -  Ext_DinoSpawnEntries_DesertOasis
+	 16  -  Ext_DinoSpawnEntries_Forest
+	 17  -  Ext_DinoSpawnEntries_ShallowWater_Cave
+	 18  -  Ext_DinoSpawnEntries_ShallowWater_Desert
+	 19  -  Ext_DinoSpawnEntries_ShallowWater_Ice
+	 20  -  DinoSpawnEntries_City_Trench
+	 21  -  DinoSpawnEntries_ParkWater
+	 22  -  DinoSpawnEntries_ParkWater2
+	 23  -  DinoSpawnEntries_Wasteland_DesertBuffer
+	 24  -  DinoSpawnEntries_Wasteland_ForbiddenZone
+	 25  -  DinoSpawnEntries_Wasteland_North
+	 26  -  DinoSpawnEntries_Wasteland_NorthCraterForest
+	 27  -  DinoSpawnEntries_Wasteland_OilFields
+	 28  -  DinoSpawnEntries_Wasteland_OilFields_Fliers
+	 29  -  DinoSpawnEntries_Wasteland_SnowBuffer
+	 30  -  DinoSpawnEntries_Wasteland_South
+	 31  -  DinoSpawnEntries_Wasteland_Sulfur
+	 32  -  T_Ext_DinoSpawnEntriesSnow_1
+	 33  -  T_Ext_DinoSpawnEntriesSnow_Purlovia
+	 34  -  T_Ext_DinoSpawnEntriesSnow_TEMP
+	 35  -  DinoSpawnEntriesBee
+	 36  -  DinoSpawnEntriesCaveTek_Hard
+	 37  -  DinoSpawnEntriesCaveTek_Hard_11
+	 38  -  DinoSpawnEntriesCaveTek_Hard_12
+	 39  -  DinoSpawnEntriesIceCave
+	 40  -  DinoSpawnEntriesSwamp
+	 41  -  DinoSpawnEntries_Beavers
+	 42  -  DinoSpawnEntries_RedwoodWater
+
+Format : [regionNumber] [dinoList]
+Example Input : []
+#dinos
