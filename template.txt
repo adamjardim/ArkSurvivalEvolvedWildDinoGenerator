@@ -47,7 +47,7 @@ Please refer to the following dino file for a list of all the dinos
 Format : [regionNumber] [dinoNumber] [dinoNumber] [dinoNumber] [dinoNumber]
 Example Input : 10 5 7 9 26 54
 #dinos
-10 5 7 9 26 54 45555
+10 5 7 9 26 54
 20 4 99 152 35
 
 =====================
