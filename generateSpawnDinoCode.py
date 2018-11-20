@@ -1,113 +1,26 @@
 #Custom imports
 from mapLoader import mapList
 from dinoLoader import dinoList
+from dinoCodeGeneratorUtility import generateSpawnDinoCode, makeSpawnEntriesCommandDino, makeSpawnLimitCommandDino, autoname
 from map import arkMap
 
 #standard imports
 from copy import deepcopy
 
-def makeSpawnEntriesCommandDino(entName, entWeight, dino):
-    return makeSpawnEntriesCommand(entName, entryWeight, dino.getID())
-
-def makeSpawnEntriesCommand(entName, entWeight, codeName):
-    return "(AnEntryName=\"" + entName + "\",EntryWeight=" + str(entWeight) + ",NPCsToSpawnStrings=(\"" + codeName + "\"))"
-
-def makeSpawnLimitCommandDino(dino, maxPerc):
-    return makeSpawnLimitCommand(dino.getID(), maxPerc)
-
-def makeSpawnLimitCommand(codeName, maxPerc):
-    return "(NPCClassString=\"" + codeName + "\",MaxPercentageOfDesiredNumToAllow=" + str(maxPerc) + ")"
-
-def generateSpawnDinoCode(reg, listOfSpawnEntryCommands, listOfSpawnLimitCommands):
-    command = "ConfigAddNPCSpawnEntriesContainer=(NPCSpawnEntriesContainerClassString=\"" + reg + "\",NPCSpawnEntries=("
-
-    #add spawn entry commands
-    for index in range(len(listOfSpawnEntryCommands)):
-        command+=listOfSpawnEntryCommands[index]
-        if (index != len(listOfSpawnEntryCommands)-1):
-            command+=","
-    command+="),NPCSpawnLimits=("
-
-    #add spawn limit commands
-    for index in range(len(listOfSpawnLimitCommands)):
-        command+=listOfSpawnLimitCommands[index]
-        if (index != len(listOfSpawnLimitCommands)-1):
-            command+=","
-
-    command+="))"
-
-    print("\n\nSpawn Dino Command:\n\n", command)
-    return command
-
-"""
-Examples:
-
-#ConfigAddNPCSpawnEntriesContainer=
-(
-    NPCSpawnEntriesContainerClassString="DinoSpawnEntriesSwamp",
-    NPCSpawnEntries=
-    (
-        (AnEntryName="BasilDesert",EntryWeight=0.01,NPCsToSpawnStrings=("Basilisk_Character_BP_C"))
-    ),
-    NPCSpawnLimits=
-    (
-        (
-            NPCClassString="Basilisk_Character_BP_C",
-            MaxPercentageOfDesiredNumToAllow=0.01
-        )
-    )
-)
-
-ConfigAddNPCSpawnEntriesContainer=
-(
-    NPCSpawnEntriesContainerClassString="DinoSpawnEntriesJungle",
-    NPCSpawnEntries=
-    (
-        (
-            AnEntryName="GlowtailIsland",
-            EntryWeight=0.1,
-            NPCsToSpawnStrings=("LanternLizard_Character_BP_C")
-        ),
-        (
-            AnEntryName="FeatherlightIsland",
-            EntryWeight=0.1,
-            NPCsToSpawnStrings=("LanternBird_Character_BP_C")
-        ),
-        (
-            AnEntryName="ShinehornIsland",
-            EntryWeight=0.1,
-            NPCsToSpawnStrings=("LanternGoat_Character_BP_C")
-        )
-    ),
-    NPCSpawnLimits=
-    (
-        (
-            NPCClassString="LanternLizard_Character_BP_C",
-            MaxPercentageOfDesiredNumToAllow=0.25
-        ),
-        (
-            NPCClassString="LanternBird_Character_BP_C",
-            MaxPercentageOfDesiredNumToAllow=0.25
-        ),
-        (
-            NPCClassString="LanternGoat_Character_BP_C",
-            MaxPercentageOfDesiredNumToAllow=0.25
-        )
-    )
-)
-
-"""
-
 #initialize maps
 listOfMaps = mapList
 listOfDinos = dinoList
+
+#initialize settings
+useGlobalWeightAndPercent = True
+useColumns = True
 
 print("")
 print("-----------------------------------")
 print("-----ARK DINO SPAWN GENERATOR-----")
 print("-----------------------------------")
 print("")
-
+maxListHeight = 50
 #Choose a map
 print("Map Choices:")
 mapCounter = 0
@@ -132,7 +45,7 @@ print("You chose : ", chosenMap.getName(), "\n")
 #Choose a region
 print("Region Choices:")
 regionCounter = 0
-for region in chosenMap.getListOfRegions():
+for region in chosenMap.getListOfRegions(): 
     print("\t", regionCounter, " - ", region)
     regionCounter+=1
 badRegionInput = True
@@ -150,7 +63,28 @@ while(badRegionInput):
 chosenRegion = chosenMap.getListOfRegions()[regionChoiceInput]
 print("You chose : ", chosenRegion, "\n")
 
+#get global settings if selected
+if useGlobalWeightAndPercent:
+    entryWeight = 999
+    while((entryWeight > 1) or (entryWeight < 0)):
+        entryWeightStr = input("Global Entry Weight: ")
+        if (entryWeightStr.replace('.','',1).isnumeric()):
+            entryWeight = float(entryWeightStr)
+            if((entryWeight > 1) or (entryWeight < 0)):
+                print("ERROR: Entry Weight must be between 0 and 1")
+        else:
+                print("Entry weight must be a number")
+    maxPercNumToAllow = 999
+    while((maxPercNumToAllow > 1) or (maxPercNumToAllow < 0)):
+        maxPercNumToAllowStr = input("Global MaxPercentageOfDesiredNumToAllow: ")
+        if (maxPercNumToAllowStr.replace('.','',1).isnumeric()):
+            maxPercNumToAllow = float(maxPercNumToAllowStr)
+            if((maxPercNumToAllow > 1) or (maxPercNumToAllow < 0)):
+                print("ERROR: MaxPercentageOfDesiredNumToAllow must be between 0 and 1")
+        else:
+            print("Max percent must be a number")
 
+'''
 #Choose number of dinos to add to region
 badInput = True
 while(badInput):
@@ -160,11 +94,13 @@ while(badInput):
         badInput = False
     else:
         print("ERROR: Must be a positive whole number")
+'''
 
 #Choose dinos
 npcSpawnEntryCommands = list()
 npcSpawnLimitCommands = list()
-for dinoEntry in range(numDinosInput):
+moreDinos = True
+while moreDinos:
     #choose dino
     print("Dino Choices: ")
     dinoCounter = 0
@@ -186,29 +122,39 @@ for dinoEntry in range(numDinosInput):
     print("You chose : ", chosenDino.getName())
 
     #choose friendly name
-    entryName = input("Choose a friendly name for this dino (just for reference): ")
+    entryName = autoname(chosenDino, chosenRegion)
 
-    #choose entry weight
-    entryWeight = 999
-    while((entryWeight > 1) or (entryWeight < 0)):
-        entryWeightStr = input("Entry Weight: ")
-        if (entryWeightStr.replace('.','',1).isnumeric()):
-            entryWeight = float(entryWeightStr)
-            if((entryWeight > 1) or (entryWeight < 0)):
-                print("ERROR: Entry Weight must be between 0 and 1")
-        else:
-            print("Entry weight must be a number")
+    if not useGlobalWeightAndPercent:
+        #choose entry weight
+        entryWeight = 999
+        while((entryWeight > 1) or (entryWeight < 0)):
+            entryWeightStr = input("Entry Weight: ")
+            if (entryWeightStr.replace('.','',1).isnumeric()):
+                entryWeight = float(entryWeightStr)
+                if((entryWeight > 1) or (entryWeight < 0)):
+                    print("ERROR: Entry Weight must be between 0 and 1")
+            else:
+                print("Entry weight must be a number")
 
-    #choose max percent
-    maxPercNumToAllow = 999
-    while((maxPercNumToAllow > 1) or (maxPercNumToAllow < 0)):
-        maxPercNumToAllowStr = input("MaxPercentageOfDesiredNumToAllow: ")
-        if (maxPercNumToAllowStr.replace('.','',1).isnumeric()):
-            maxPercNumToAllow = float(maxPercNumToAllowStr)
-            if((maxPercNumToAllow > 1) or (maxPercNumToAllow < 0)):
-                print("ERROR: MaxPercentageOfDesiredNumToAllow must be between 0 and 1")
-        else:
-            print("Max percent must be a number")
+        #choose max percent
+        maxPercNumToAllow = 999
+        while((maxPercNumToAllow > 1) or (maxPercNumToAllow < 0)):
+            maxPercNumToAllowStr = input("MaxPercentageOfDesiredNumToAllow: ")
+            if (maxPercNumToAllowStr.replace('.','',1).isnumeric()):
+                maxPercNumToAllow = float(maxPercNumToAllowStr)
+                if((maxPercNumToAllow > 1) or (maxPercNumToAllow < 0)):
+                    print("ERROR: MaxPercentageOfDesiredNumToAllow must be between 0 and 1")
+            else:
+                print("Max percent must be a number")
+
+    print("You chose ", chosenDino.getName(), " : Entry Weight: " , entryWeight , " : Max Percent: ", maxPercNumToAllow)
+    isCorrect = "fart"
+    while (isCorrect != "y") and (isCorrect != "n"):
+        isCorrect = input("Is this correct? (y/n): ")
+        if (isCorrect != "y") and (isCorrect != "n"):
+            print("Please enter 'y' or 'n'")
+    if isCorrect == "n":
+        continue
 
     #form commands
     entryCommand = makeSpawnEntriesCommandDino(entryName, entryWeight, chosenDino)
@@ -220,8 +166,15 @@ for dinoEntry in range(numDinosInput):
     npcSpawnEntryCommands.append(deepcopy(entryCommand))
     npcSpawnLimitCommands.append(deepcopy(limitCommand))
 
-    if(dinoEntry != numDinosInput-1):
-        print("\nNext Dino...\n")
+    moreDinoString = "fart"
+    while (moreDinoString != "y") and (moreDinoString != "n"):
+        moreDinoString = input("Would you like to add another dino? (y/n): ")
+        if (moreDinoString != "y") and (moreDinoString != "n"):
+            print("Please enter 'y' or 'n'")
+    if moreDinoString == "y":
+        print("Next dino...")
+    if moreDinoString == "n":
+        moreDinos = False
 
 #form final command
 generateSpawnDinoCode(chosenRegion, npcSpawnEntryCommands, npcSpawnLimitCommands)

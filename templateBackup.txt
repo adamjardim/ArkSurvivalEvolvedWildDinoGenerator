@@ -1,0 +1,53 @@
+##THIS IS A TEMPLATE BACKUP FILE, FOR REFERENCE, DO NOT EDIT##
+
+This is the template document for the dino loader.  
+For each area marked with a '#' please fill in your choice below it.  
+Choices for that section will be presented above that line.
+
+
+======================
+Format : [EntryWeight]
+Example : .02
+#global entry weight
+.02
+
+
+=====================
+Format : [MaxPercent]
+Example : .2
+#global max percent
+.2
+
+
+=====================
+Map Choices:
+	 0  -  The Island
+	 1  -  The Center
+	 2  -  Scorched Earth
+	 3  -  Aberration
+	 4  -  Ragnarok
+	 5  -  Extinction
+
+Format : [Map Number]
+Example Input : 1
+#map
+1
+
+
+=====================
+Please refer to the following map files for a list of the region numbers
+- islandRegionChoices.txt
+- centerRegionChoices.txt
+- scorchedEarthRegionChoices.txt
+- aberrationRegionChoices.txt
+- ragnarokRegionChoices.txt
+- extinctionRegionChoices.txt
+
+Format : [regionNumber] [dinoNumber] [dinoNumber] [dinoNumber] [dinoNumber]
+Example Input : 10 5 7 9 26 54
+#dinos
+10 5 7 9 26 54
+55 4 99 152 35
+
+=====================
+#done

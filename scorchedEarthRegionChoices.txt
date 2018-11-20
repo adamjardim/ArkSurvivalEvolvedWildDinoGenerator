@@ -1,0 +1,23 @@
+Scorched Earth
+
+Region Choices:
+	 0  -  DinoSpawnEntriesBee
+	 1  -  DinoSpawnEntriesCaveMegalo
+	 2  -  DinoSpawnEntriesMegalania
+	 3  -  DinoSpawnEntriesPhoenix
+	 4  -  SE_DinoSpawnEntriesBadlands
+	 5  -  SE_DinoSpawnEntriesCanyonCave
+	 6  -  SE_DinoSpawnEntriesCanyons
+	 7  -  SE_DinoSpawnEntriesDunes
+	 8  -  SE_DinoSpawnEntriesEZMode
+	 9  -  SE_DinoSpawnEntriesGreenDesert
+	 10  -  SE_DinoSpawnEntriesMountain
+	 11  -  SE_DinoSpawnEntriesMountainCave
+	 12  -  SE_DinoSpawnEntriesOasis
+	 13  -  SE_DinoSpawnEntriesRuinsCave
+	 14  -  SE_DinoSpawnEntriesRuinsCaveNoGolem
+	 15  -  SE_DinoSpawnEntriesSandworm
+	 16  -  SE_DinoSpawnEntriesWater
+	 17  -  SE_DinoSpawnEntriesWyvern
+	 18  -  SE_DinoSpawnEntriesWyvernTrench
+	 19  -  SE_DinoSpawnEntries_RexSolo

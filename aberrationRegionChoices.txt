@@ -1,0 +1,25 @@
+Aberration
+
+Region Choices:
+	 0  -  AB_DinoSpawnEntriesRockDrake
+	 1  -  AB_DinoSpawnEntries_Basilisks
+	 2  -  AB_DinoSpawnEntries_BioLumCave
+	 3  -  AB_DinoSpawnEntries_DrakeTrench
+	 4  -  AB_DinoSpawnEntries_ElementCave
+	 5  -  AB_DinoSpawnEntries_ElementWater
+	 6  -  AB_DinoSpawnEntries_ElementalChamber
+	 7  -  AB_DinoSpawnEntries_FertileCave
+	 8  -  AB_DinoSpawnEntries_OctoBat
+	 9  -  AB_DinoSpawnEntries_RockDrake
+	 10  -  AB_DinoSpawnEntries_TwitchBioLand
+	 11  -  AB_DinoSpawnEntries_TwitchBioWater
+	 12  -  AB_DinoSpawnEntries_TwitchFertileLand
+	 13  -  AB_DinoSpawnEntries_TwitchFertileLandEasy
+	 14  -  AB_DinoSpawnEntries_TwitchFertileWater
+	 15  -  AB_DinoSpawnEntries_TwitchFertileWaterCave3
+	 16  -  AB_DinoSpawnEntries_TwitchFertileWaterEasy
+	 17  -  AB_DinoSpawnEntries_XenoQueens
+	 18  -  AB_DinoSpawnEntries_Xenos
+	 19  -  SE_DinoSpawnEntries_ChupaCabraSurface
+	 20  -  DinoSpawnEntriesBee
+	 21  -  DinoSpawnEntriesChupa
