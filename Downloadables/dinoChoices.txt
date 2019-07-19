@@ -1,0 +1,271 @@
+Dino Choices
+
+Dino Choices:
+	 0  -  achatina
+	 1  -  achatina (aberrant)
+	 2  -  allosaurus
+	 3  -  ammonite
+	 4  -  angler
+	 5  -  anglerfish (aberrant)
+	 6  -  ankylosaurus
+	 7  -  ankylosaurus (aberrant)
+	 8  -  araneo
+	 9  -  araneo (aberrant)
+	 10  -  archaeopterx
+	 11  -  argentavis
+	 12  -  arthropluera
+	 13  -  arthropluera (aberrant)
+	 14  -  arthropluera (corrupted)
+	 15  -  baryonyx
+	 16  -  baryonyx (aberrant)
+	 17  -  basilisk
+	 18  -  basilisk (aberrant)
+	 19  -  basilosaurus
+	 20  -  beelzebufo
+	 21  -  beelzebufo (aberrant)
+	 22  -  brontosaurus
+	 23  -  brontosaurus (skeletal)
+	 24  -  broodmotherLysrix
+	 25  -  bulbdog
+	 26  -  carbonemys
+	 27  -  carbonemys (aberrant)
+	 28  -  carnotaurus
+	 29  -  carnotaurus (aberrant)
+	 30  -  carnotaurus (alpha)
+	 31  -  carnotaurus (corrupted)
+	 32  -  carnotaurus (skeletal)
+	 33  -  castoroides
+	 34  -  chalicotherium
+	 35  -  chalicotherium (corrupted)
+	 36  -  cnidaria
+	 37  -  cnidaria (aberrant)
+	 38  -  coelacanth
+	 39  -  coelacanth (aberrant)
+	 40  -  compy
+	 41  -  corrupt Tumor
+	 42  -  daeodon
+	 43  -  deathworm
+	 44  -  deathworm (alpha)
+	 45  -  deathworm (corrupted)
+	 46  -  defense unit
+	 47  -  desert titan
+	 48  -  desert titan flock
+	 49  -  dilophosaur
+	 50  -  dilophosaur (corrupted)
+	 51  -  dimetrodon
+	 52  -  dimetrodon (aberrant)
+	 53  -  dimorphodon
+	 54  -  dimorphodon (aberrant)
+	 55  -  dimorphodon (corrupted)
+	 56  -  diplocaulus
+	 57  -  diplocaulus (aberrant)
+	 58  -  diplodocus
+	 59  -  diplodocus (aberrant)
+	 60  -  direbear
+	 61  -  direbear (aberrant)
+	 62  -  direwolf
+	 63  -  dodo
+	 64  -  dodo (aberrant)
+	 65  -  dodo (zombie)
+	 66  -  doedicurus
+	 67  -  doedicurus (aberrant)
+	 68  -  dragon
+	 69  -  dung beetle (aberrant)
+	 70  -  dungBeetle
+	 71  -  dunkleosteus
+	 72  -  electrophorus
+	 73  -  electrophorus (aberrant)
+	 74  -  enforcer
+	 75  -  equus
+	 76  -  equus (aberrant)
+	 77  -  equus (unicorn)
+	 78  -  eurypterid
+	 79  -  featherlight
+	 80  -  forest titan
+	 81  -  gacha
+	 82  -  gallimimus
+	 83  -  gasbags
+	 84  -  giantBee
+	 85  -  gigantopithecus
+	 86  -  gigantopithecus (aberrant)
+	 87  -  gigantosaurus
+	 88  -  gigantosaurus (corrupted)
+	 89  -  gigantosaurus (skeletal)
+	 90  -  glowbug
+	 91  -  glowtail
+	 92  -  griffin
+	 93  -  hesperornis
+	 94  -  hyaenodon
+	 95  -  ice titan
+	 96  -  ichthyornis
+	 97  -  ichthyosaurus
+	 98  -  iguanodon
+	 99  -  iguanodon (aberrant)
+	 100  -  jerboa
+	 101  -  jerboa (bone)
+	 102  -  jug bug
+	 103  -  jug bug (oil)
+	 104  -  jug bug (water)
+	 105  -  kairuku
+	 106  -  kaprosuchus
+	 107  -  karkinos
+	 108  -  karkinos (alpha)
+	 109  -  kentrosaurus
+	 110  -  king titan (alpha)
+	 111  -  king titan (beta)
+	 112  -  king titan (gamma)
+	 113  -  lamprey
+	 114  -  leech
+	 115  -  leech (diseased)
+	 116  -  leedsichthys
+	 117  -  leedsichthys (alpha)
+	 118  -  liopleurodon
+	 119  -  lymantria
+	 120  -  lystrosaurus
+	 121  -  lystrosaurus (aberrant)
+	 122  -  mammoth
+	 123  -  managarmr
+	 124  -  manta
+	 125  -  manta (aberrant)
+	 126  -  manticore
+	 127  -  mantis
+	 128  -  megalania
+	 129  -  megalania (aberrant)
+	 130  -  megaloceros
+	 131  -  megalodon
+	 132  -  megalodon (alpha)
+	 133  -  megalosaurus
+	 134  -  megalosaurus (aberrant)
+	 135  -  meganeura
+	 136  -  meganeura (aberrant)
+	 137  -  megapithecus
+	 138  -  megatherium
+	 139  -  mek
+	 140  -  mek (mega)
+	 141  -  mesopithecus
+	 142  -  microraptor
+	 143  -  morellatops
+	 144  -  mosasaurus
+	 145  -  mosasaurus (alpha)
+	 146  -  moschops
+	 147  -  moschops (aberrant)
+	 148  -  nameless
+	 149  -  onyc
+	 150  -  otter
+	 151  -  otter (aberrant)
+	 152  -  oviraptor
+	 153  -  ovis
+	 154  -  ovis (aberrant)
+	 155  -  pachy
+	 156  -  pachyrhinosaurus
+	 157  -  paraceratherium
+	 158  -  paraceratherium (aberrant)
+	 159  -  paraceratherium (corrupted)
+	 160  -  parasaur
+	 161  -  parasaur (aberrant)
+	 162  -  parasaur (tek)
+	 163  -  pegomastax
+	 164  -  pelagornis
+	 165  -  phioma
+	 166  -  phoenix
+	 167  -  piranha
+	 168  -  piranha (aberrant)
+	 169  -  plesiosaur
+	 170  -  procoptodon
+	 171  -  pteradon (corrupted)
+	 172  -  pteranodon
+	 173  -  pulmonoscorpius
+	 174  -  pulmonoscorpius (aberrant)
+	 175  -  purlovia
+	 176  -  purlovia (aberrant)
+	 177  -  quetzal
+	 178  -  quetzal (skeletal)
+	 179  -  raptor
+	 180  -  raptor (aberrant)
+	 181  -  raptor (alpha)
+	 182  -  raptor (corrupted)
+	 183  -  raptor (skeletal)
+	 184  -  raptor (tek)
+	 185  -  ravager
+	 186  -  reaper king
+	 187  -  reaper king
+	 188  -  reaper king (corrupted)
+	 189  -  reaper king (surface) (alpha)
+	 190  -  reaper king (tamed)
+	 191  -  rex
+	 192  -  rex (alpha)
+	 193  -  rex (corrupted)
+	 194  -  rex (corrupted) (enraged)
+	 195  -  rex (dodo)
+	 196  -  rex (skeletal)
+	 197  -  rex (tek)
+	 198  -  rock drake
+	 199  -  rock drake (corrupted)
+	 200  -  rock elemental
+	 201  -  rock elemental (rubble)
+	 202  -  rockwell
+	 203  -  rockwell (alpha)
+	 204  -  rockwell (beta)
+	 205  -  rockwell (gamma)
+	 206  -  rockwell tentacle
+	 207  -  rockwell tentacle (alpha)
+	 208  -  rockwell tentacle (beta)
+	 209  -  rockwell tentacle (gamma)
+	 210  -  rollRat
+	 211  -  sabertooth
+	 212  -  sabertooth salmon
+	 213  -  sabertooth salmon (aberrant)
+	 214  -  sarco
+	 215  -  sarco (aberrant)
+	 216  -  scout
+	 217  -  seeker
+	 218  -  shinehorn
+	 219  -  snow owl
+	 220  -  spinosaurus
+	 221  -  spinosaurus (aberrant)
+	 222  -  spinosaurus (corrupted)
+	 223  -  stegosaurus
+	 224  -  stegosaurus (aberrant)
+	 225  -  stegosaurus (corrupted)
+	 226  -  stegosaurus (skeletal)
+	 227  -  stegosaurus (tek)
+	 228  -  tapejara
+	 229  -  terror bird
+	 230  -  therizinosaurus
+	 231  -  thornyDragon
+	 232  -  thylacoleo
+	 233  -  titanoboa
+	 234  -  titanoboa (aberrant)
+	 235  -  titanomyrma
+	 236  -  titanomyrma (flying)
+	 237  -  titanosaur
+	 238  -  triceratops
+	 239  -  triceratops (aberrant)
+	 240  -  triceratops (corrupted)
+	 241  -  triceratops (enraged)
+	 242  -  triceratops (skeletal)
+	 243  -  trilobite
+	 244  -  trilobite (aberrant)
+	 245  -  troodon
+	 246  -  turkey
+	 247  -  turkey (super)
+	 248  -  tusoteuthis
+	 249  -  tusoteuthis (alpha)
+	 250  -  velonasaur
+	 251  -  vulture
+	 252  -  woolly rhino
+	 253  -  wyvern
+	 254  -  wyvern (corrupted)
+	 255  -  wyvern (dodo)
+	 256  -  wyvern (fire)
+	 257  -  wyvern (fire) (alpha)
+	 258  -  wyvern (fire) (bone)
+	 259  -  wyvern (fire) (zombie)
+	 260  -  wyvern (forest)
+	 261  -  wyvern (ice)
+	 262  -  wyvern (lightning)
+	 263  -  wyvern (lightning) (zombie)
+	 264  -  wyvern (poison)
+	 265  -  wyvern (poison) (zombie)
+	 266  -  yeti
+	 267  -  yutyrannus

@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['loadConfig.py'],
-             pathex=['/Users/ajardim/Documents/Personal/ArkCodeGenerator'],
+             pathex=['C:\\Users\\ajardim\\Documents\\Personal\\ArkCodeGenerator'],
              binaries=[],
              datas=[],
              hiddenimports=[],
