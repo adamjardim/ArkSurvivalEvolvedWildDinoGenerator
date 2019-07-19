@@ -1,0 +1,30 @@
+"+++How to use this document+++
+
+++Reading the map name++
+You will find a line denoted by a "#Map" text.  Below this line, you will see the name of the map.
+The regions in this document match the regions found on this map.  If you wish to change the map, please
+re-run the createTemplateConfig executable and choose the new map you desire.
+
+++Reading the region names++
+Below the map name, you will see a line denoted by a "#Regions" text.  Below this line, you will see all the
+regions for this map printed, preceded by a "= ".  
+
+* If hand-edited, please be aware that any region names that do not match the proper name exactly will not be 
+generated properly on the server.
+
+Below the region name, you will also see a line denoted looking similar to this: (0.20,0.02) or some other pair
+of numbers.  The first number represents the entry weight for each dino in this region.  The second number
+represents the max percentage to allow for each dino in this region.  These will have been automatically 
+generated from the createTemplateConfig executable.  These can be manually changed, but make sure they are 
+actually numbers.
+
+++Choosing dinos for each reason++
+Below the entry weight and max percentage line, you will see a list of numbers separated by a "," like so:
+0,5,10,20,30
+
+These numbers represent the dinos that will appear in this region.  Please manually change these numbers to
+the desired dinosaurs to appear in this region.  Please refer to the dinolist document provided in the same 
+directory as the createTemplateConfig executable for the dino numbers.  Any number of dinosaurs may appear,
+but please separate each dino number with a ","
+
+============"

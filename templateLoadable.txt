@@ -1,0 +1,205 @@
+#Map
+The Island
+
+#Regions
+= DinoSpawnEntriesArcha
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesBeach
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesBee
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCave1
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCave2-LowSpiderScorp
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCave5
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCave7-Fliers
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveIceWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveLava
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveMegalo
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Easy_11
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Easy_12
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Easy_13 
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Easy_14
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Easy_15
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Easy_16
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Hard_11
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Hard_12
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Hard_13
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Hard_14
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Hard_15
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Hard_16 
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Medium_11
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Medium_12
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Medium_13
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Medium_14
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Medium_15
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveTek_Medium_16
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCaveWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesDamiensAtoll
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesGigant
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesGigantTekCave
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesGrassland
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesIceCave
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesJungle
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesMegalania
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesMonsterIsland 
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesMountain
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesPelican
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesPenguins
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesQuetz
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesRedwoods
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSnow
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSwamp
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSwampCave
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSwampCaveWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesThy
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesTinyCave
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesTitano
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesUnderwaterGround
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesUnicorn
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Beavers
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWaterAngler
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Lio
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Mosa
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Mosa_Caves
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Plesia
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Tuso
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DeepWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_InlandWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Ocean
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_OceanCaveHard
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_OceanCaveMedium
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_RedwoodWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_ShallowWater
+(0.20, 0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_SwampWater
+(0.20, 0.02)
+0,1,5,10,20,30

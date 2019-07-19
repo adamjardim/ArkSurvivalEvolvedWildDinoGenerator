@@ -1,0 +1,175 @@
+#Map
+Valguero
+
+#Regions
+= VAL_DinoSpawnEntries_TwitchFertileLand_C
+(0.2,0.02)
+0,1,5,10,20,30
+= VAL_DinoSpawnEntries_TwitchFertileLand_Mix_C
+(0.2,0.02)
+0,1,5,10,20,30
+= VAL_DinoSpawnEntries_TwitchFertileLandEasy_C
+(0.2,0.02)
+0,1,5,10,20,30
+= VAL_DinoSpawnEntries_TwitchBioWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesBee_C
+(0.2,0.02)
+0,1,5,10,20,30
+= Val_DinoSpawnEntries_DrakeTrench_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Mosa_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Tuso_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWater_Lio_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DarkWaterAngler_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Ocean_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesCave_JungleTemple_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Eel_CaveWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSwampCave_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSwampCaveWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_SmallLakeWithPiranha_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Deinonychus_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesDamiensAtoll_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesBeach_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Beavers_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesGigant_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesGrassland_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesMountain_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesMonsterIsland_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Valguero_Scotland_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSavana_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesJungle_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesTundra_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesRedwoods_C
+(0.2,0.02)
+0,1,5,10,20,30
+= Val_DinoSpawnEntriesWyvernTrench_C
+(0.2,0.02)
+0,1,5,10,20,30
+= Valguero_IceWyvernEntries_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesPelican_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesQuetz_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesUnicorn_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesSwamp_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_SwampWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_ShallowWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_InlandWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_DeepWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_NormalLakeWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_SmallLakeNoPiranha_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_RedwoodWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesWater_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_SpiderCave_Entrance_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Valguero_SnowForest_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Valguero_SnowPlains_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_PolarBear_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesPenguins_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Valguero_IceDesert_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_Iceworm_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesArcha_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesThy_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_ChalkHills_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_ChalkHills_Golem_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntries_ChalkHills_Plains_C
+(0.2,0.02)
+0,1,5,10,20,30
+= DinoSpawnEntriesBrood_C
+(0.2,0.02)
+0,1,5,10,20,30
