@@ -104,5 +104,5 @@ def generateSpawnDinoCode(reg, listOfSpawnEntryCommands, listOfSpawnLimitCommand
     file = open('GeneratedCode.txt', 'w+');
     file.write(command)
 
-    print("\n\nSpawn Dino Command:\n\n", command)
+    #print("\n\nSpawn Dino Command:\n\n", command)
     return command

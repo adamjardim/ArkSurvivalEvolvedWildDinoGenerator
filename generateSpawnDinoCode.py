@@ -177,7 +177,7 @@ while moreDinos:
         moreDinos = False
 
 #form final command
-generateSpawnDinoCode(chosenRegion, npcSpawnEntryCommands, npcSpawnLimitCommands)
+print(generateSpawnDinoCode(chosenRegion, npcSpawnEntryCommands, npcSpawnLimitCommands))
 
 print("\n\nCOPY THE ABOVE LINE INTO YOUR SERVER CODE")
 input("Enter any key to end the session...")

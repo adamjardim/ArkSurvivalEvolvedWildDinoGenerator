@@ -3,6 +3,7 @@ from mapLoader import mapList
 from dinoLoader import dinoList
 from dinoCodeGeneratorUtility import generateSpawnDinoCode, makeSpawnEntriesCommandDino, makeSpawnLimitCommandDino, autoname, templateFindGlobalEntryWeight, templateFindGlobalMaxPerc, templateFindMap, templateFindDinos, notifyError
 from map import arkMap
+from configuration import configuration, regionConfiguration
 
 #standard imports
 from copy import deepcopy
@@ -14,9 +15,7 @@ import sys
 listOfMaps = mapList
 listOfDinos = dinoList
 
-currentFile = open("generatedCode.txt", "r+")
-backupFile = open("backupGeneratedCode.txt", "w+")
-backupFile.writelines(currentFile.readlines())
+print("\n\n\n")
 
 config = open("loadable.txt", "r")
 #contents = config.read()
@@ -49,6 +48,8 @@ if not foundMatchingMap:
     input("Enter any key to end the session...")
     sys.exit()
 
+config = configuration(chosenMap)
+
 commands = []
 #find regions
 foundRegions = False
@@ -63,43 +64,65 @@ if not foundRegions:
     input("Enter any key to end the session...")
     sys.exit()
 
-for x in range(regionLine,len(lines)):
-    if foundRegions:
-        if "=" in lines[x]:
-            regionName = lines[x].split('= ')[1].split('\n')[0]
+regionIndex = 0
+for x in range(0,len(lines)):
+    if "= " in lines[x]:
+        regionName = lines[x].split('= ')[1].split('\n')[0]
+        regions = chosenMap.getListOfRegions()
+        foundMatchingRegion = False
+        for region in regions:
+            if regionName == region:
+                foundMatchingRegion = True
+                chosenRegion = region
+                #print("Found Region: ", chosenRegion)
+        if not foundMatchingRegion:
+            print("Found a region that doesn't match given map: \"", regionName, "\"")
+            input("Enter any key to end the session...")
+            sys.exit()
+        print("Region #", regionIndex)
+        regConfig = regionConfiguration(chosenRegion)
+        weightLinefirst = lines[x+1].split('(')[1]
+        weightLine = weightLinefirst.split(')')[0]
+        entryWeight = weightLine.split(',')[0]
+        regConfig.setEntryWeight(float(entryWeight))
+        maxPercNumToAllow = weightLine.split(',')[1]
+        regConfig.setMax(float(maxPercNumToAllow))
+        dinoList = lines[x+2].split(',')
+        npcSpawnEntryCommands = list()
+        npcSpawnLimitCommands = list()
+        for dino in dinoList:
+            chosenDino = listOfDinos[int(dino)]
+            regConfig.addDino(int(dino))
+            entryName = autoname(chosenDino,regionName)
+            #form commands
+            entryCommand = makeSpawnEntriesCommandDino(entryName, entryWeight, chosenDino)
+            limitCommand = makeSpawnLimitCommandDino(chosenDino, maxPercNumToAllow)
+            npcSpawnEntryCommands.append(deepcopy(entryCommand))
+            npcSpawnLimitCommands.append(deepcopy(limitCommand))
+        command = generateSpawnDinoCode(chosenRegion, npcSpawnEntryCommands, npcSpawnLimitCommands)
+        commands.append(command)
+        commands.append("\n")
+        regionIndex = regionIndex + 1
 
-            regions = chosenMap.getListOfRegions()
-            foundMatchingRegion = False
-            for region in regions:
-                if regionName == region:
-                    foundMatchingRegion = True
-                    chosenRegion = region
-            if not foundMatchingRegion:
-                print("Found a region that doesn't match given map: \"", regionName, "\"")
-                input("Enter any key to end the session...")
-                sys.exit()
-            weightLinefirst = lines[x+1].split('(')[1]
-            print(weightLinefirst)
-            weightLine = weightLinefirst.split(')')[0]
-            print(weightLine)
-            entryWeight = weightLine.split(',')[0]
-            maxPercNumToAllow = weightLine.split(',')[1]
-            dinoList = lines[x+2].split(',')
-            npcSpawnEntryCommands = list()
-            npcSpawnLimitCommands = list()
-            for dino in dinoList:
-                chosenDino = listOfDinos[int(dino)]
-                entryName = autoname(chosenDino,regionName)
-                #form commands
-                entryCommand = makeSpawnEntriesCommandDino(entryName, entryWeight, chosenDino)
-                limitCommand = makeSpawnLimitCommandDino(chosenDino, maxPercNumToAllow)
-                npcSpawnEntryCommands.append(deepcopy(entryCommand))
-                npcSpawnLimitCommands.append(deepcopy(limitCommand))
-            command = generateSpawnDinoCode(chosenRegion, npcSpawnEntryCommands, npcSpawnLimitCommands)
-            commands.append(command)
-            commands.append("\n")
+# double check with user
+badConfig = False
+isCorrect = "Fart"
+while (isCorrect != "y") and (isCorrect != "n"):
+    isCorrect = input("Is this correct? (y/n): ")
+    if (isCorrect != "y") and (isCorrect != "n"):
+            print("Please enter 'y' or 'n'")
+    if isCorrect == "n":
+        badConfig = True
+        break
 
-print("Generating code...")
-outFile = open("generatedCode.txt", "w+")
-outFile.writelines(commands)
+if not badConfig:
+    currentFile = open("generatedCode.txt", "r+")
+    backupFile = open("backupGeneratedCode.txt", "w+")
+    backupFile.writelines(currentFile.readlines())
+    print("Generating code...")
+    outFile = open("generatedCode.txt", "w+")
+    outFile.writelines(commands)
+else:
+    print("Please correct your configuration document")
+        
 input("Enter any key to end the session...")
