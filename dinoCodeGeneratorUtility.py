@@ -1,4 +1,5 @@
 import sys
+from dinoLoader import dinoList
 
 def notifyError():
     input("There was an error! Press any key to end the session...")
@@ -51,7 +52,7 @@ def templateFindMap(lines):
 
 def templateFindDinos(lines):
     foundMark = False
-    dinoList = []
+    dinoInventory = []
     for line in lines:
         if(not line.find("#dinos")):
             foundMark = True
@@ -65,8 +66,8 @@ def templateFindDinos(lines):
     if foundMark == False:
         print("Unable to find dinos!")
         return "ERROR"
-    print(dinoList)
-    return dinoList
+    print(dinoInventory)
+    return dinoInventory
 
 def makeSpawnEntriesCommandDino(entName, entWeight, dino):
     return makeSpawnEntriesCommand(entName, entWeight, dino.getID())
@@ -101,8 +102,44 @@ def generateSpawnDinoCode(reg, listOfSpawnEntryCommands, listOfSpawnLimitCommand
 
     command+="))"
 
-    file = open('GeneratedCode.txt', 'w+');
+    file = open('GeneratedCode.txt', 'w+')
     file.write(command)
 
     #print("\n\nSpawn Dino Command:\n\n", command)
     return command
+
+def getDinoNames(dinos):
+    activeList = []
+    for index in range(len(dinos)):
+        activeList.append(dinos[index].getName())
+    return activeList
+
+def printDinoNamesOnNewLines(dinos):
+    nameList = getDinoNames(dinos)
+    if len(dinos) == 0:
+        print("[DINO LIST IS EMPTY]")
+        return
+    for name in nameList:
+        print(name)
+
+def getDinoListWithLettersAnywhere(word):
+    activeList = []
+    for index in range(len(dinoList)):
+        if word in dinoList[index].getName():
+            activeList.append(dinoList[index])
+    return activeList
+
+def getDinoListWithLettersStart(word):
+    activeList = []
+    for index in range(len(dinoList)):
+        if dinoList[index].getName().startswith(word):
+            activeList.append(dinoList[index])
+    return activeList
+
+#print("==============================")
+#print("========UTILITY TESTER========")
+#print("==============================")
+#wordToSearch = input("Search Term : ")
+#print("\nRESULTS:\n")
+#rintDinoNamesOnNewLines(getDinoListWithLettersAnywhere(wordToSearch))
+#print("\nEND OF RESULTS\n")
