@@ -9,6 +9,8 @@ This project contains the source code and executables for generating Server code
 
 The output is server-safe code that will configure the map to automatically spawn the chosen dinosaurs in the chosen regions at the chosen rates.  When visiting those regions on any server that is using the generated codes, players can find the chosen dinosaurs.  Behaviors and abilities are unchanged.
 
+Prebuilt executables can be found in the "Dist" folder, and can be run from the Desktop or through the command line/terminal.
+
 Interface: Command Prompt/Terminal
 
 Supported DLCs:
