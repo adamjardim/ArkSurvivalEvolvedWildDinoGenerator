@@ -1,4 +1,4 @@
-# ArkCodeGenerator
+# Ark: Survival Evolved Wild Dinosaur Code Generator
 pyinstaller xXxXx.py --onefile
 
 Game:
