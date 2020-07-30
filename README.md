@@ -9,6 +9,8 @@ This project contains the source code and executables for generating Server code
 
 The output is server-safe code that will configure the map to automatically spawn the chosen dinosaurs in the chosen regions at the chosen rates.  When visiting those regions on any server that is using the generated codes, players can find the chosen dinosaurs.  Behaviors and abilities are unchanged.
 
+Interface: Command Prompt/Terminal
+
 Supported DLCs:
 - The Island
 - The Center
@@ -20,3 +22,5 @@ Supported DLCs:
 
 Unsupported DLCs:
 - Crystal Isles
+
+Code is written in Python 3.  This is a work in progress, but is currently functional.
