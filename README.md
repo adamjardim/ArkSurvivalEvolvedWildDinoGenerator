@@ -21,8 +21,9 @@ Supported DLCs:
 - Aberration
 - Genesis
 - Extinction
+- Crystal Isles
 
 Unsupported DLCs:
-- Crystal Isles
+- None
 
 Code is written in Python 3.  This is a work in progress, but is currently functional.
