@@ -36,8 +36,9 @@ def generateDinoMapFrame(parent, inputRegion):
         noDinosWarning = Label(parent, text="No Dinos in region")
         noDinosWarning.pack()
 
+
 top = Tk()
-top.geometry("500x500")
+top.geometry("1000x1000")
 top.title("Ark Dino Code Generator")
 
 introText = Label(top, text="Welcome to the Ark Dino Code Generator.")
@@ -70,7 +71,6 @@ def mapDropdownCallback(*args):
 mapChoiceVariable.trace("w", mapDropdownCallback)
 
 #CHOOSE A REGION
-
 regionChooseText = Label(top, text="Choose a region to add:")
 regionChooseText.pack()
 

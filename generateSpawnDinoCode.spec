@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['generateSpawnDinoCode.py'],
-             pathex=['C:\\Users\\ajardim\\Documents\\Personal\\ArkCodeGenerator'],
+             pathex=['/Users/ajardim/Documents/Personal/ArkCodeGenerator'],
              binaries=[],
              datas=[],
              hiddenimports=[],
